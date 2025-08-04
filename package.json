@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://kietdev.github.io/Portfolio/",
+  "homepage": "https://anhkiet18072002.github.io/Portfolio/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
