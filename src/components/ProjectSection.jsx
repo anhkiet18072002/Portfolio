@@ -35,7 +35,7 @@ const dummyProjects = [
     description:
       "A personal portfolio website built with React, Next.js, and Tailwind CSS, deployed on Vercel.",
     tech: ["Next.js", "React", "TailwindCSS", "Framer Motion"],
-    link: "#",
+    link: "https://github.com/anhkiet18072002/Portfolio/tree/main",
     image:
       "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop",
     category: "Web/Apps",

@@ -16,10 +16,8 @@ import {
   FaBriefcase,
   FaCode,
   FaFacebook,
-  FaCertificate,
   FaGlobe,
   FaArrowRight,
-  FaCube,
 } from "react-icons/fa";
 
 import Spline from "@splinetool/react-spline";
