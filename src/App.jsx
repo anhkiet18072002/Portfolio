@@ -24,15 +24,9 @@ import Spline from "@splinetool/react-spline";
 import ProjectSection from "./components/ProjectSection";
 import Contact from "./components/Contact";
 import { NavbarProvider } from "./contexts/NavbarContext";
-import user_image from "./assets/images/user.png";
 function App() {
   // 1. State untuk mengontrol visibilitas aset 3D (default: aktif)
   const [is3dEnabled, setIs3dEnabled] = useState(true);
-
-  // Fungsi untuk toggle state
-  const toggle3dAssets = () => {
-    setIs3dEnabled((prev) => !prev);
-  };
 
   // Data untuk card statistik
   const stats = [
@@ -175,7 +169,7 @@ function App() {
               className="hidden lg:flex flex-1 justify-center h-[600px] w-full order-first lg:order-none mt-16 md:mt-40"
             >
               <img
-                src={user_image}
+                src="/user.png"
                 alt="user"
                 className="w-full h-full object-cover rounded-3xl"
               />

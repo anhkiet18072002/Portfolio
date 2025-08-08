@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { FaShieldAlt } from "react-icons/fa";
 import { useNavbar } from "../contexts/NavbarContext";
-import logo from "../assets/images/logo.png";
+
 const CLIP_PATH =
   "polygon(0 0, 100% 0, 100% 80%, 68% 80%, 64% 100%, 36% 100%, 32% 80%, 0 80%)";
 
@@ -86,7 +85,7 @@ const Header = () => {
                   {/* Mobile: Brand Logo & Text (Left) */}
                   <a href="#home" className="flex items-center gap-3">
                     <img
-                      src={logo}
+                      src="/logo.png"
                       alt="Logo"
                       className="h-12 w-12 flex-shrink-0"
                     />
@@ -125,7 +124,7 @@ const Header = () => {
 
                   {/* Desktop: Center Logo & Text */}
                   <a href="#home" className="flex items-center gap-3">
-                    <img src={logo} alt="Logo" className="h-12 w-12" />
+                    <img src="/logo.png" alt="Logo" className="h-12 w-12" />
                     <div className="block">
                       <h1 className="font-moderniz text-base text-[#00ffdc]">
                         Nguyen Anh Kiet
