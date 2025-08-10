@@ -84,13 +84,8 @@ const Header = () => {
                 <div className="w-full flex items-center justify-between md:hidden">
                   {/* Mobile: Brand Logo & Text (Left) */}
                   <a href="#home" className="flex items-center gap-3">
-                    <img
-                      src="/images/logo_K.png"
-                      alt="Logo"
-                      className="h-12 w-12 flex-shrink-0"
-                    />
                     <div>
-                      <h1 className="font-moderniz text-sm text-[#00ffdc] whitespace-nowrap">
+                      <h1 className="font-moderniz text-sm text-[#00ffdc] text-center whitespace-nowrap">
                         Nguyen Anh Kiet
                       </h1>
                       <p
@@ -124,13 +119,8 @@ const Header = () => {
 
                   {/* Desktop: Center Logo & Text */}
                   <a href="#home" className="flex items-center gap-3">
-                    <img
-                      src="/images/logo_K.png"
-                      alt="Logo"
-                      className="h-12 w-12"
-                    />
                     <div className="block">
-                      <h1 className="font-moderniz text-base text-[#00ffdc]">
+                      <h1 className="font-moderniz text-base text-[#00ffdc] text-center whitespace-nowrap">
                         Nguyen Anh Kiet
                       </h1>
                       <p
