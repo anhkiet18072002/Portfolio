@@ -160,7 +160,7 @@ function App() {
               className="hidden lg:flex flex-1 justify-center h-[600px] w-full order-first lg:order-none mt-16 md:mt-40"
             >
               <img
-                src="/images/user.png"
+                src="/images/portrait.png"
                 alt="user"
                 className="w-full h-full object-cover rounded-3xl"
               />

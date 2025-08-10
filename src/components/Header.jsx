@@ -85,7 +85,7 @@ const Header = () => {
                   {/* Mobile: Brand Logo & Text (Left) */}
                   <a href="#home" className="flex items-center gap-3">
                     <img
-                      src="/images/logo.png"
+                      src="/images/logo_K.png"
                       alt="Logo"
                       className="h-12 w-12 flex-shrink-0"
                     />
@@ -125,7 +125,7 @@ const Header = () => {
                   {/* Desktop: Center Logo & Text */}
                   <a href="#home" className="flex items-center gap-3">
                     <img
-                      src="/images/logo.png"
+                      src="/images/logo_K.png"
                       alt="Logo"
                       className="h-12 w-12"
                     />
