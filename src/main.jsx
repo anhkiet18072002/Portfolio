@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
+import Preloader from "./components/Preloader.jsx"; // Impor Preloader
 import "./index.css";
 
 /**
@@ -9,9 +10,18 @@ import "./index.css";
  * dan beralih antara Preloader dan aplikasi utama.
  */
 const Main = () => {
+  // State untuk melacak apakah preloader masih aktif
+  const [isLoading, setIsLoading] = useState(true);
+
+  // Fungsi callback yang akan dipanggil oleh Preloader saat animasinya selesai
+  const handlePreloaderFinished = () => {
+    setIsLoading(false);
+  };
+
   return (
     <>
-      <App />
+      {/* Secara kondisional merender Preloader atau App berdasarkan state 'isLoading'. */}
+      {isLoading ? <Preloader onFinished={handlePreloaderFinished} /> : <App />}
     </>
   );
 };
