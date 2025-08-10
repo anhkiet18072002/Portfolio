@@ -8,14 +8,13 @@
 /* Font custom local */
 @font-face {
   font-family: 'Moderniz';
-  src: url('/Portfolio/assets/fonts/Moderniz.otf') format('opentype');
+  src: url('/fonts/Moderniz.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'Bauhaus93';
-  src: url('/Portfolio/assets/fonts/BAUHS93.ttf') format('truetype');
+  src: url('/fonts/BAUHS93.ttf') format('truetype');
 }
-
 @layer base {
   body {
     background-color: #060010; 
