@@ -1,1 +1,6 @@
-* text eol=crlf
+* text=auto eol=lf
+
+# Đánh dấu font là binary để Git không đổi line ending
+*.ttf binary
+*.otf binary
+*.png binary
