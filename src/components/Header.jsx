@@ -94,7 +94,7 @@ const Header = () => {
                         Nguyen Anh Kiet
                       </h1>
                       <p
-                        className="font-moderniz text-[9px] text-[#000754]"
+                        className="font-moderniz text-[12px] text-[#000754] tracking-[2px]"
                         style={{
                           textShadow:
                             "0.5px 0.5px 0 #00ffdc, -0.5px -0.5px 0 #00ffdc, 0.5px -0.5px 0 #00ffdc, -0.5px 0.5px 0 #00ffdc",
@@ -130,7 +130,7 @@ const Header = () => {
                         Nguyen Anh Kiet
                       </h1>
                       <p
-                        className="font-moderniz text-[10px] text-[#000754]"
+                        className="font-moderniz text-[14px] text-[#000754] tracking-[2px]"
                         style={{
                           textShadow:
                             "0.5px 0.5px 0 #00ffdc, -0.5px -0.5px 0 #00ffdc, 0.5px -0.5px 0 #00ffdc, -0.5px 0.5px 0 #00ffdc",

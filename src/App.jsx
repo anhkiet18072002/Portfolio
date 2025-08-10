@@ -3,7 +3,6 @@ import { useState } from "react"; // Impor useState
 import Header from "./components/Header";
 import TextGenerateEffect from "./components/text-generate-effect";
 import GradientText from "./components/GradientText";
-import { AnimatedGradientTextDemo } from "./components/AnimatedGradientTextDemo";
 import Skills from "./components/Skills";
 import { ButtonMovingBorder } from "./components/MovingBorderButton";
 import { motion } from "framer-motion";
@@ -58,14 +57,6 @@ function App() {
           >
             {/* Blok Teks */}
             <div className="flex-1 text-white space-y-6 pt-16 md:pt-40 order-last md:order-none">
-              {/* ... konten teks hero ... */}
-              <motion.div
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.7, delay: 0.1, ease: "easeOut" }}
-              >
-                <AnimatedGradientTextDemo />
-              </motion.div>
               <motion.h1
                 initial={{ opacity: 0, x: -60 }}
                 animate={{ opacity: 1, x: 0 }}
