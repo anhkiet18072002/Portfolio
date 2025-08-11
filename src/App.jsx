@@ -256,7 +256,7 @@ function App() {
                 <div className="flex flex-row sm:flex-row gap-4 mt-8 justify-center md:justify-start items-center">
                   <ButtonMovingBorder
                     as="a"
-                    href="/NguyenAnhKiet_CV.pdf"
+                    href="/NguyenAnhKiet_Resume.pdf"
                     download
                     duration={3000}
                     borderRadius="0.75rem"
