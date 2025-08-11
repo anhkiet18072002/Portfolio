@@ -31,11 +31,11 @@ import { useNavbar } from "../contexts/NavbarContext";
 // ===================================
 const dummyProjects = [
   {
-    title: "Portfolio v2",
+    title: "Portfolio",
     description:
       "A personal portfolio website built with React, Next.js, and Tailwind CSS, deployed on Vercel.",
     tech: ["Next.js", "React", "TailwindCSS", "Framer Motion"],
-    link: "https://github.com/anhkiet18072002/Portfolio/tree/main",
+    link: "https://github.com/anhkiet18072002/Portfolio",
     image:
       "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop",
     category: "Web/Apps",
@@ -57,7 +57,7 @@ const dummyProjects = [
     tech: ["NestJS", "MongoDB", "JWT", "NextJs", "ReactJS"],
     link: "https://github.com/anhkiet18072002/Product-Management-System",
     image:
-      "https://images.unsplash.com/photo-1600132806378-62402124d9e0?q=80&w=2070&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2070&auto=format&fit=crop",
     category: "Web/Apps",
   },
   {
@@ -67,7 +67,7 @@ const dummyProjects = [
     processor: ["STM32", "Raspberry Pi"],
     link: "https://drive.google.com/drive/u/2/folders/1PGhVO5DyA-r4UA53hy2hXjrIvRjcjIpV",
     image:
-      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=2070&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?q=80&w=2070&auto=format&fit=crop", // bãi gửi xe
     category: "Embedded",
   },
   {
@@ -77,7 +77,7 @@ const dummyProjects = [
     processor: ["Raspberry Pi"],
     link: "https://drive.google.com/drive/u/2/folders/10C0OsJP1BbujYBRwfBrieLCjoC7sooPD",
     image:
-      "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?q=80&w=2070&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1522199755839-a2bacb67c546?q=80&w=2070&auto=format&fit=crop", // cánh cửa
     category: "Embedded",
   },
 ];

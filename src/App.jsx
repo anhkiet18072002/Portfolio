@@ -160,9 +160,9 @@ function App() {
               className="hidden lg:flex flex-1 justify-center h-[600px] w-full order-first lg:order-none mt-16 md:mt-40"
             >
               <img
-                src="/images/portrait.png"
+                src="/images/user.png"
                 alt="user"
-                className="w-full h-full object-cover rounded-3xl"
+                className="w-full h-full object-cover rounded-3xl shadow-lg border-2 border-slate-800 transition-all duration-300 hover:shadow-[0_0_24px_2px_#00ffdc] mx-20"
               />
             </motion.div>
           </section>
