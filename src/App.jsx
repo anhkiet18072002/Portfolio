@@ -240,12 +240,15 @@ function App() {
                   Nguyen Anh Kiet
                 </h3>
                 <p className="text-white/80 leading-relaxed mt-4 font-cascadia text-justify">
-                  As a recent graduate with a solid foundation in my field, I am
-                  excited to apply my skills and knowledge in a dynamic,
-                  growth-driven environment. My goal is to make meaningful
-                  contributions to your company by utilizing my expertise on
-                  impactful projects, while also embracing continuous learning
-                  and professional development within the organization.
+                  Full-stack Developer with strong expertise in Backend
+                  development using Node.js and Frontend development with
+                  React.js and Next.js. Experienced in building scalable,
+                  high-performance web applications and RESTful APIs.
+                  Additionally, knowledgeable in Embedded systems, capable of
+                  working across software layers from low-level firmware to
+                  user-facing interfaces. Adept at problem-solving,
+                  collaborating in agile teams, and delivering reliable,
+                  efficient solutions.
                 </p>
                 <div className="my-6 bg-slate-900/50 border-l-4 border-[#00ffdc] p-4 rounded-r-lg italic text-white/70 font-cascadia">
                   "Whoever strives shall succeed."
