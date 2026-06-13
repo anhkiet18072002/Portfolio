@@ -38,7 +38,7 @@ function App() {
     },
     {
       icon: <FaGlobe />,
-      value: "1",
+      value: "2",
       title: "YEARS OF EXPERIENCE",
       description: "Continuous learning journey",
     },
