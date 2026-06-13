@@ -1,28 +1,20 @@
 import { useState, useEffect } from "react";
 
-// Mục đích: Hiển thị các dòng chữ như "Back End Developer", "Nguyen Anh Kiet" theo kiểu đánh chữ từng ký tự, sau đó xóa dần và hiện dòng mới – lặp lại liên tục. Dòng chữ có màu gradient động và hiệu ứng nhấp nháy dấu gạch đứng | (cursor).
-
 // Definisikan teks yang akan ditampilkan secara bergantian
-const TEXTS_TO_TYPE = ["Back End Developer", "Nguyen Anh Kiet"];
+const TEXTS_TO_TYPE = ["Fullstack Developer", "Nguyen Anh Kiet"];
 
 // Komponen utama
 export default function LoopingGradientText({
-  className = "", // Thêm class tùy chỉnh từ ngoài vào
-  colors = ["#ffaa40", "#9c40ff", "#ffaa40"], // Màu gradient mặc định
-  animationSpeed = 3, // Tốc độ chuyển động gradient
-  typingSpeed = 100, // Tốc độ đánh chữ (ms/1 ký tự)
-  deletingSpeed = 75, // Tốc độ xóa chữ
-  pauseDuration = 2000, // Thời gian dừng lại khi đánh xong (ms)
+  className = "",
+  colors = ["#ffaa40", "#9c40ff", "#ffaa40"],
+  animationSpeed = 3,
+  typingSpeed = 100,
+  deletingSpeed = 75,
+  pauseDuration = 2000,
 }) {
-  const [textIndex, setTextIndex] = useState(0); //vị trí dòng chữ đang được đánh
-  const [displayedText, setDisplayedText] = useState(""); //nội dung đang được hiển thị (dần tăng hoặc giảm).
-  const [isDeleting, setIsDeleting] = useState(false); //đang xóa hay đang gõ.
-
-  //   Mỗi lần displayedText, isDeleting... thay đổi thì:
-  // Nếu đang xóa, giảm từng ký tự.
-  // Nếu đang gõ, thêm từng ký tự.
-  // Khi hoàn thành một dòng: dừng trong pauseDuration, sau đó chuyển sang xóa.
-  // Khi xóa hết, chuyển sang dòng tiếp theo ((textIndex + 1) % TEXTS_TO_TYPE.length).
+  const [textIndex, setTextIndex] = useState(0);
+  const [displayedText, setDisplayedText] = useState("");
+  const [isDeleting, setIsDeleting] = useState(false);
 
   useEffect(() => {
     const handleTyping = () => {

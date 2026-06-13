@@ -99,6 +99,7 @@ function App() {
                   words={
                     "I craft responsive and visually engaging websites using React, Tailwind CSS, and modern web technologies."
                   }
+                  className="text-white"
                 />
               </motion.div>
               <motion.div
@@ -218,9 +219,8 @@ function App() {
                 viewport={{ once: true, amount: 0.3 }}
                 transition={{ duration: 0.9, ease: "easeOut" }}
                 // Lebar berubah jika 3D dinonaktifkan
-                className={`text-white text-center md:text-left px-4 md:px-8 transition-all duration-700 ${
-                  is3dEnabled ? "md:w-1/2" : "md:w-2/3"
-                }`}
+                className={`text-white text-center md:text-left px-4 md:px-8 transition-all duration-700 ${is3dEnabled ? "md:w-1/2" : "md:w-2/3"
+                  }`}
               >
                 <p
                   className="text-2xl text-gray-300 font-moderniz my"
