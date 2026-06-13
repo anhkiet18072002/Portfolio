@@ -33,8 +33,8 @@ const Contact = () => {
 
     try {
       await emailjs.send(
-        "service_1807",
-        "template_4bwpiki",
+        "service_t816gqb",
+        "template_cqlc7rw",
         {
           name: contactForm.name,
           email: contactForm.email,
@@ -42,7 +42,7 @@ const Contact = () => {
           message: contactForm.message,
           time: new Date().toLocaleString(),
         },
-        "A9Ui-1WazuxmSNHWc"
+        "JZvSxlu-r2s9zW_Ao"
       );
 
       alert("Message sent successfully!");
@@ -67,7 +67,7 @@ const Contact = () => {
       name: "Facebook",
       icon: <FaFacebook />,
       url: "https://www.facebook.com/nguyen.kiet.342577/",
-      color: "from-[#833AB4] to-[#1877F2]", // tím => xanh
+      color: "from-[#833AB4] to-[#1877F2]",
       hoverColor: "hover:shadow-[#833AB4]/25",
     },
     {
@@ -82,7 +82,7 @@ const Contact = () => {
       name: "LinkedIn",
       icon: <FaLinkedin />,
       url: "https://www.linkedin.com/in/nguy%E1%BB%85n-anh-ki%E1%BB%87t-a6671933b/",
-      color: "from-[#0A66C2] to-[#004182]", // LinkedIn official gradient
+      color: "from-[#0A66C2] to-[#004182]",
       hoverColor: "hover:shadow-[#0A66C2]/25",
     },
   ];

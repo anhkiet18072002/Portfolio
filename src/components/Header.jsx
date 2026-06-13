@@ -124,7 +124,7 @@ const Header = () => {
                         Nguyen Anh Kiet
                       </h1>
                       <p
-                        className="font-moderniz text-[14px] text-[#000754] tracking-[2px]"
+                        className="font-moderniz text-[20px] text-[#000754] tracking-[2px]"
                         style={{
                           textShadow:
                             "0.5px 0.5px 0 #00ffdc, -0.5px -0.5px 0 #00ffdc, 0.5px -0.5px 0 #00ffdc, -0.5px 0.5px 0 #00ffdc",
@@ -139,6 +139,7 @@ const Header = () => {
                   <div className="flex items-center gap-4">
                     <ul className="flex items-center list-none gap-16">
                       <NavLink href="#projects">Project</NavLink>
+                      <NavLink href="#experience">Experience</NavLink>
                       <NavLink href="#contact">Contact</NavLink>
                     </ul>
                   </div>
@@ -159,6 +160,7 @@ const Header = () => {
                         <NavLink href="#home">Home</NavLink>
                         <NavLink href="#about">About</NavLink>
                         <NavLink href="#projects">Project</NavLink>
+                        <NavLink href="#experience">Experience</NavLink>
                         <NavLink href="#contact">Contact</NavLink>
                       </ul>
                     </motion.div>

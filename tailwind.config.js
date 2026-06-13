@@ -9,6 +9,7 @@ export default {
       fontFamily: {
         'moderniz': ['Moderniz', 'sans-serif'],
         'bauhaus': ['Bauhaus93', 'sans-serif'],
+        'orbitron': ['Orbitron', 'sans-serif']
       },
       animation: {
         shadowFade: 'shadowFade 5s infinite ease-in-out',

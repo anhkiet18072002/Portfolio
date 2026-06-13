@@ -13,6 +13,7 @@ import {
   FaTimes,
   FaDownload,
   FaDatabase,
+  FaJava
 } from "react-icons/fa";
 import {
   SiTailwindcss,
@@ -20,9 +21,11 @@ import {
   SiMongodb,
   SiExpress,
   SiNestjs,
+  SiMysql,
+  SiOracle,
+  SiSubversion
 } from "react-icons/si";
 import { PiCodeBold } from "react-icons/pi";
-import { LuBadge } from "react-icons/lu";
 import { LiaLayerGroupSolid } from "react-icons/lia";
 import { useNavbar } from "../contexts/NavbarContext";
 
@@ -67,7 +70,7 @@ const dummyProjects = [
     processor: ["STM32", "Raspberry Pi"],
     link: "https://drive.google.com/drive/u/2/folders/1PGhVO5DyA-r4UA53hy2hXjrIvRjcjIpV",
     image:
-      "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?q=80&w=2070&auto=format&fit=crop", // bãi gửi xe
+      "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?q=80&w=2070&auto=format&fit=crop",
     category: "Embedded",
   },
   {
@@ -77,7 +80,7 @@ const dummyProjects = [
     processor: ["Raspberry Pi"],
     link: "https://drive.google.com/drive/u/2/folders/10C0OsJP1BbujYBRwfBrieLCjoC7sooPD",
     image:
-      "https://images.unsplash.com/photo-1522199755839-a2bacb67c546?q=80&w=2070&auto=format&fit=crop", // cánh cửa
+      "https://images.unsplash.com/photo-1522199755839-a2bacb67c546?q=80&w=2070&auto=format&fit=crop",
     category: "Embedded",
   },
 ];
@@ -98,14 +101,18 @@ const techStack = {
     { name: "Node.js", icon: <FaNodeJs className="text-[#339933]" /> },
     { name: "Express", icon: <SiExpress className="text-white" /> },
     { name: "NestJS", icon: <SiNestjs className="text-white" /> },
+    { name: "Java", icon: <FaJava className="text-[#007396]" /> },
+    { name: "SQL", icon: <SiMysql className="text-[#4479A1]" /> },
   ],
   database: [
     { name: "MongoDB", icon: <SiMongodb className="text-[#47A248]" /> },
     { name: "MySQL", icon: <FaDatabase className="text-[#fcd34d]" /> },
+    { name: "Oracle", icon: <SiOracle className="text-[#F80000]" /> }
   ],
   tools: [
     { name: "Git & GitHub", icon: <FaGithub className="text-white" /> },
     { name: "Figma", icon: <FaFigma className="text-[#F24E1E]" /> },
+    { name: "SVN", icon: <SiSubversion className="text-[#809CC9]" /> },
   ],
 };
 
@@ -426,11 +433,10 @@ function ProjectSection() {
               <motion.button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
-                className={`relative flex flex-1 flex-col items-center justify-center px-2 py-7 rounded-2xl font-semibold text-base transition-colors duration-300 outline-none ${
-                  activeTab === tab.id
-                    ? "text-white"
-                    : "text-slate-400 hover:text-cyan-300"
-                }`}
+                className={`relative flex flex-1 flex-col items-center justify-center px-2 py-7 rounded-2xl font-semibold text-base transition-colors duration-300 outline-none ${activeTab === tab.id
+                  ? "text-white"
+                  : "text-slate-400 hover:text-cyan-300"
+                  }`}
                 whileTap={{ scale: 0.97 }}
                 whileHover={{ scale: 1.03 }}
                 transition={{ type: "spring", stiffness: 400, damping: 20 }}
@@ -476,21 +482,19 @@ function ProjectSection() {
                 <>
                   <div className="flex justify-center gap-4 mb-8">
                     <button
-                      className={`px-5 py-2 rounded-full font-semibold transition-all duration-200 border ${
-                        projectCategory === "Web/Apps"
-                          ? "bg-cyan-700/80 text-white border-cyan-400 shadow-cyan-500/10 shadow-lg"
-                          : "bg-slate-900/60 text-cyan-200 border-slate-700 hover:bg-cyan-800/40 hover:text-white"
-                      }`}
+                      className={`px-5 py-2 rounded-full font-semibold transition-all duration-200 border ${projectCategory === "Web/Apps"
+                        ? "bg-cyan-700/80 text-white border-cyan-400 shadow-cyan-500/10 shadow-lg"
+                        : "bg-slate-900/60 text-cyan-200 border-slate-700 hover:bg-cyan-800/40 hover:text-white"
+                        }`}
                       onClick={() => setProjectCategory("Web/Apps")}
                     >
                       Web/Apps
                     </button>
                     <button
-                      className={`px-5 py-2 rounded-full font-semibold transition-all duration-200 border ${
-                        projectCategory === "Embdedded"
-                          ? "bg-cyan-700/80 text-white border-cyan-400 shadow-cyan-500/10 shadow-lg"
-                          : "bg-slate-900/60 text-cyan-200 border-slate-700 hover:bg-cyan-800/40 hover:text-white"
-                      }`}
+                      className={`px-5 py-2 rounded-full font-semibold transition-all duration-200 border ${projectCategory === "Embdedded"
+                        ? "bg-cyan-700/80 text-white border-cyan-400 shadow-cyan-500/10 shadow-lg"
+                        : "bg-slate-900/60 text-cyan-200 border-slate-700 hover:bg-cyan-800/40 hover:text-white"
+                        }`}
                       onClick={() => setProjectCategory("Embedded")}
                     >
                       Embedded

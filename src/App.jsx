@@ -21,6 +21,7 @@ import {
 
 import Spline from "@splinetool/react-spline";
 import ProjectSection from "./components/ProjectSection";
+import Experience from "./components/Experience";
 import Contact from "./components/Contact";
 import { NavbarProvider } from "./contexts/NavbarContext";
 function App() {
@@ -319,6 +320,11 @@ function App() {
           {/* BAGIAN PROJECTS */}
           <section id="projects" className="md:py-18">
             <ProjectSection />
+          </section>
+
+          {/* BAGIAN EXPERIENCE */}
+          <section id="experience" className="md:py-18">
+            <Experience />
           </section>
 
           {/* BAGIAN CONTACT */}

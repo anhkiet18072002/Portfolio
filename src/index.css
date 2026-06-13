@@ -16,6 +16,11 @@
   src: url('/fonts/BAUHS93.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'Orbitron';
+  src: url('/fonts/Orbitron.ttf') format('truetype');
+}
+
 @layer base {
   body {
     background-color: #060010; 
