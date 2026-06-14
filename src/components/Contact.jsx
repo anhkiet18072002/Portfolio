@@ -12,6 +12,8 @@ import {
   FaLinkedin,
 } from "react-icons/fa";
 import emailjs from "emailjs-com";
+import { MdEmail, MdPhone } from "react-icons/md";
+
 
 // JSON file untuk menyimpan comments
 const COMMENTS_FILE = "/comments.json";
@@ -33,8 +35,8 @@ const Contact = () => {
 
     try {
       await emailjs.send(
-        "service_t816gqb",
-        "template_cqlc7rw",
+        "service_1807",
+        "template_4bwpiki",
         {
           name: contactForm.name,
           email: contactForm.email,
@@ -42,7 +44,7 @@ const Contact = () => {
           message: contactForm.message,
           time: new Date().toLocaleString(),
         },
-        "JZvSxlu-r2s9zW_Ao"
+        "A9Ui-1WazuxmSNHWc"
       );
 
       alert("Message sent successfully!");
@@ -64,26 +66,25 @@ const Contact = () => {
       hoverColor: "hover:shadow-gray-500/25",
     },
     {
-      name: "Facebook",
-      icon: <FaFacebook />,
-      url: "https://www.facebook.com/nguyen.kiet.342577/",
-      color: "from-[#833AB4] to-[#1877F2]",
-      hoverColor: "hover:shadow-[#833AB4]/25",
-    },
-    {
-      name: "Instagram",
-      icon: <FaInstagram />,
-      url: "https://www.instagram.com/na.kiet1807/",
-      color: "from-pink-500 to-purple-600",
-      hoverColor: "hover:shadow-pink-500/25",
-    },
-
-    {
       name: "LinkedIn",
       icon: <FaLinkedin />,
       url: "https://www.linkedin.com/in/nguy%E1%BB%85n-anh-ki%E1%BB%87t-a6671933b/",
       color: "from-[#0A66C2] to-[#004182]",
       hoverColor: "hover:shadow-[#0A66C2]/25",
+    },
+    {
+      name: "Email",
+      icon: <MdEmail />,
+      color: "from-[#833AB4] to-[#1877F2]",
+      hoverColor: "hover:shadow-[#833AB4]/25",
+      value: "kiet18072002@email.com",
+    },
+    {
+      name: "Phone",
+      icon: <MdPhone />,
+      color: "from-pink-500 to-purple-600",
+      hoverColor: "hover:shadow-pink-500/25",
+      value: "+84 079 216 4958",
     },
   ];
 
@@ -252,33 +253,38 @@ const Contact = () => {
                   Connect With Me
                 </h3>
                 <div className="grid gap-4">
-                  {socialLinks.map((social, index) => (
-                    <motion.a
-                      key={social.name}
-                      href={social.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      initial={{ opacity: 0, y: 20 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 0.5, delay: index * 0.1 }}
-                      whileHover={{ scale: 1.02, x: 10 }}
-                      className={`group flex items-center gap-4 p-4 bg-gradient-to-r ${social.color} rounded-xl text-white transition-all duration-300 ${social.hoverColor} hover:shadow-xl`}
-                    >
-                      <div className="text-2xl group-hover:scale-110 transition-transform duration-300">
-                        {social.icon}
-                      </div>
-                      <div className="flex-1">
-                        <span className="font-semibold">{social.name}</span>
-                        <p className="text-sm opacity-90">
-                          Follow me on {social.name}
-                        </p>
-                      </div>
-                      <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <FaReply className="rotate-180" />
-                      </div>
-                    </motion.a>
-                  ))}
+                  {socialLinks.map((social, index) => {
+                    const Wrapper = social.url ? motion.a : motion.div;
+                    const linkProps = social.url
+                      ? { href: social.url, target: "_blank", rel: "noopener noreferrer" }
+                      : {};
+
+                    return (
+                      <Wrapper
+                        key={social.name}
+                        {...linkProps}
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.5, delay: index * 0.1 }}
+                        whileHover={{ scale: 1.02, x: 10 }}
+                        className={`group flex items-center gap-4 p-4 bg-gradient-to-r ${social.color} rounded-xl text-white transition-all duration-300 ${social.hoverColor} hover:shadow-xl`}
+                      >
+                        <div className="text-2xl group-hover:scale-110 transition-transform duration-300">
+                          {social.icon}
+                        </div>
+                        <div className="flex-1">
+                          <span className="font-semibold">{social.name}</span>
+                          <p className="text-sm opacity-90">
+                            {social.value ? social.value : `Follow me on ${social.name}`}
+                          </p>
+                        </div>
+                        <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                          <FaReply className="rotate-180" />
+                        </div>
+                      </Wrapper>
+                    );
+                  })}
                 </div>
               </div>
             </div>

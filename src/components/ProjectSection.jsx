@@ -39,48 +39,43 @@ const dummyProjects = [
       "A personal portfolio website built with React, Next.js, and Tailwind CSS, deployed on Vercel.",
     tech: ["Next.js", "React", "TailwindCSS", "Framer Motion"],
     link: "https://github.com/anhkiet18072002/Portfolio",
-    image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop",
+    image: "/images/portfolio.png",
     category: "Web/Apps",
   },
   {
-    title: "HR_Management",
+    title: "HR Management System",
     description:
       "Designing a web interface to help managers track employees and assign tasks efficiently.",
     tech: ["NestJS", "MongoDB", "JWT", "NextJs", "ReactJS"],
     link: "https://github.com/anhkiet18072002/hr-management/tree/main",
-    image:
-      "https://images.unsplash.com/photo-1522199755839-a2bacb67c546?q=80&w=2072&auto=format&fit=crop",
+    image: "/images/hr.png",
     category: "Web/Apps",
   },
   {
-    title: "Product-Management-System",
+    title: "Product Management System",
     description:
       "Designed a website interface (frontend and backend) with features to display and like products.",
     tech: ["NestJS", "MongoDB", "JWT", "NextJs", "ReactJS"],
     link: "https://github.com/anhkiet18072002/Product-Management-System",
-    image:
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2070&auto=format&fit=crop",
+    image: "/images/product.png",
     category: "Web/Apps",
   },
   {
-    title: "Smart parking system",
+    title: "IoT For Parking Management",
     description: "Detect license plates when cars are entering or exiting.",
     tech: ["Python", "PHP", "C++"],
     processor: ["STM32", "Raspberry Pi"],
     link: "https://drive.google.com/drive/u/2/folders/1PGhVO5DyA-r4UA53hy2hXjrIvRjcjIpV",
-    image:
-      "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?q=80&w=2070&auto=format&fit=crop",
+    image: "/images/parking.png",
     category: "Embedded",
   },
   {
-    title: "Check-in using QR code in event",
+    title: "Check-in with QR code",
     description: "Monitor people entering and exiting large events.",
     tech: ["Python"],
     processor: ["Raspberry Pi"],
     link: "https://drive.google.com/drive/u/2/folders/10C0OsJP1BbujYBRwfBrieLCjoC7sooPD",
-    image:
-      "https://images.unsplash.com/photo-1522199755839-a2bacb67c546?q=80&w=2070&auto=format&fit=crop",
+    image: "/images/QR.png",
     category: "Embedded",
   },
 ];
